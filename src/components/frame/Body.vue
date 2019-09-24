@@ -1,10 +1,11 @@
 <template>
-<div>
+<div class="appBody">
 <transition>
 <router-view></router-view>
 </transition>
 </template>
-<style scoped>
+<style scoped lang="scss">
+
 </style>
 <script>
 export default{

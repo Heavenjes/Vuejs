@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+  <!--<div>-->
+    <!--<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
       <a class="navbar-brand" href="#">Easakay</a>
       <button
         class="navbar-toggler"
@@ -18,13 +18,13 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#">
-              Home
+              Home-->
               <!-- <span class="sr-only">(current)</span> -->
-            </a>
+            <!--</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">About</a>
-          </li>
+          </li>-->
           <!-- <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
@@ -39,7 +39,7 @@
           <!-- <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>-->
-        </ul>
+       <!-- </ul>
         <form class="form-inline my-2 my-lg-0">
           <input
             class="form-control mr-sm-2"
@@ -50,8 +50,8 @@
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
       </div>
-    </nav>
-    <h1 class="text-primary">Login using VueJs</h1>
+    </nav>-->
+    <!--<h1 class="text-primary">Login using VueJs</h1>-->
     <div class="row loginPage">
       <div class="col-md-4"></div>
       <div class="col-md-4">
@@ -87,7 +87,7 @@
         </div>
       </div>
     </div>
-  </div>
+  
 </template>
  <script>
 //eslint-disable-next-line
