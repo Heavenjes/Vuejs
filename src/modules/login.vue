@@ -1,92 +1,38 @@
 <template>
-  <!--<div>-->
-    <!--<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-      <a class="navbar-brand" href="#">Easakay</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">
-              Home-->
-              <!-- <span class="sr-only">(current)</span> -->
-            <!--</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>-->
-          <!-- <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              />
-          </li>-->
-          <!-- <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>-->
-       <!-- </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>-->
-    <!--<h1 class="text-primary">Login using VueJs</h1>-->
-    <div class="row loginPage">
-      <div class="col-md-4"></div>
+  
+   <div class="row loginPage">
+      <div class="col-md-4">
       <div class="col-md-4">
         <div class="container">
           <div class="card">
             <div class="card-header">Login</div>
             <div class="card-body">
               <div class="form-group">
-                <label for="username" class="bmd-label-floating">Username</label>
+                <label for="username" class="bmd-label-floating" id ="label">Email</label>
                 <input
                   type="text"
                   class="form-control"
-                  id="uname"
+                  id="email"
                   placeholder="Enter your username here!"
                 />
               </div>
               <div class="form-group">
-                <label for="pwd" class="bmd-label-floating">Password</label>
+                <label for="pwd" class="bmd-label-floating" id ="label">Password</label>
                 <input
                   type="password"
                   class="form-control"
-                  id="passw"
-                  placeholder="Enter your password!"
-                />
+                  id="password"
+                  placeholder="Enter your password!"/>
               </div>
-              <center>
-                <button type="button" class="btn btn-outline-success login-btn" id="btnLogin">Login</button>
-                
-                <!-- <input type = "login" class = "form -control" id = "login" value = "Login" v-on:> -->
-              </center>
             </div>
+              <center>
+                <button type="button" class="btn btn-outline-success login-btn" id="login">Login</button>
+                </center>
           </div>
         </div>
       </div>
     </div>
+    </div>            
   
 </template>
  <script>
@@ -97,16 +43,16 @@ window.JQuery = require("jquery");
 $(document).ready(function() {
   $("input").attr("required", true);
   // $("#email").prop('required', 'required');
-  $("#btnLogin").click(function() {
-    let input = $("#uname").val();
-    let pass = $("#passw").val();
+  $("#login").click(function() {
+    let input = $("#email").val();
+    let pass = $("#password").val();
     $("#passw").attr({
       pattern: "[A-Za-z]{8,}",
       title: "This field is required"
     });
     if (input != "" && pass != "") {
-      console.log($("#uname").val());
-      console.log($("#passw").val());
+      console.log($("#email").val());
+      console.log($("#password").val());
     }
   });
 
@@ -124,19 +70,64 @@ $(document).ready(function() {
         background-size: cover;
         background-repeat: no-repeat;
     } */
-.card {
-  background-color: black;
-  margin-top: 40px;
+.card-header{
+text-align: center;
+font-size: 50px;
+color:white;
 }
-  
-
-.h3 {
-  margin-left: 500px;
-  margin-top: 300px;
-  font-size: 40px;
-  font-family: Times new;
+hr{
+margin-bottom: 30px;
 }
-.nav {
-  margin-block: auto;
+.container{
+width: 960px;
+height: 610px;
+margin:50px auto;
+font-family: 'Droid Serif', serif;
+position:relative;
+padding-left: 400px;
+padding-top:100px;
+}
+.card{
+width: 520px;
+float:left;
+padding: 10px 55px 40px;
+background-color: black;
+border: 15px solid white;
+box-shadow: 0 0 10px;
+border-radius: 50px;
+font-size: 13px;
+}
+input[type=text],[type=password] {
+width: 97.7%;
+height: 34px;
+padding-left: 5px;
+margin-bottom: 20px;
+margin-top: 8px;
+box-shadow: 0 0 5px #00F5FF;
+border: 2px solid violet;
+color: #4f4f4f;
+font-size: 16px;
+}
+label{
+color: white;
+text-shadow: 0 1px 0 red;
+font-size: 20px;
+font-weight: bold;
+}
+#login {
+font-size: 20px;
+margin-top: 15px;
+background: linear-gradient(#22abe9 5%, #36caf0 100%);
+border: 1px solid #0F799E;
+padding: 7px 35px;
+color: white;
+text-shadow: 0px 1px 0px #13506D;
+font-weight: bold;
+border-radius: 2px;
+cursor: pointer;
+width: 100%;
+}
+#login:hover{
+background: linear-gradient(#36caf0 5%, #22abe9 100%);
 }
 </style>
