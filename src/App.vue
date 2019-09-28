@@ -1,19 +1,17 @@
 <template>
-  <div id="app">
+  <div id="app"> 
   <Header></Header>
-  <login></login>
-  </div>
+  <AppBody></AppBody>
+ </div>
 </template>
-
 <script>
 import Header from 'components/frame/Header.vue'
-import login from 'modules/login.vue'
-
+import AppBody from 'components/frame/Body.vue'
 export default {
   name: 'app',
   components: {
     Header,
-    login
+    AppBody
   
   }
 }

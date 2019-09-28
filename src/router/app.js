@@ -3,7 +3,7 @@ export default {
       {
         path : "/register",
         name : "register",
-        component : resolve => require(['modules/HelloWorld.vue'], resolve),
+        component : resolve => require(['modules/register.vue'], resolve),
         
       },
 
@@ -11,7 +11,14 @@ export default {
         path : "/login",
         name : "login",
         component : resolve => require(['modules/login.vue'], resolve),
-      }
+      },
+
+      {
+        path : "/sidebar",
+        name : "sidebar",
+        component : resolve => require(['modules/sidebar.vue'], resolve),
+
+      },
     ]
   }
   
