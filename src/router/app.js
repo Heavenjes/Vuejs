@@ -14,9 +14,9 @@ export default {
       },
 
       {
-        path : "/sidebar",
+        path : "/dashboard",
         name : "sidebar",
-        component : resolve => require(['modules/sidebar.vue'], resolve),
+        component : resolve => require(['modules/dashboard.vue'], resolve),
 
       },
     ]
